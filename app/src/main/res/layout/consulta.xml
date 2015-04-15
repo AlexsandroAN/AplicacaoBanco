@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="TELA DE CONSULTA DE FUNCIONÁRIOS"/>
+
+            <TextView
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:text="Nome:"/>
+
+             <TextView
+                  android:layout_width="fill_parent"
+                     android:layout_height="fill_parent"
+                 android:id="@+id/tvNome"/>
+
+          <TextView
+             android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+              android:text="Matricula:"/>
+
+            <TextView
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+                android:id="@+id/tvMatricula"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/btRegistroAnterior"
+        android:text="Registro Anterior"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/btProximoRegistro"
+        android:text="Proximo Registro"/>
+
+               <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:id="@+id/btVoltar"
+                android:text="Menu Principal"/>
+
+
+</LinearLayout>
+
+
+
+

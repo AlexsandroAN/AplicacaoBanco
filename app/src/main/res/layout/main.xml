@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Departamento de Arquitetura e Engenharia" />
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/dae" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="TELA PRINCIPAL" />
+
+    <Button
+        android:id="@+id/btCadastroFuncionario"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Cadastro de Funcioários" />
+
+    <Button
+        android:id="@+id/btConsultaFuncionario"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Consulta de Funcionários" />
+
+</LinearLayout>
+
+
+
+
