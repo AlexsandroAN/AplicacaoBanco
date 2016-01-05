@@ -1,50 +1,99 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="TELA DE CONSULTA DE FUNCIONÁRIOS"/>
+    <!--layout_width - Largura do layout -->
+    <!--layout_heigh - Altura do layout -->
 
-            <TextView
-                 android:layout_width="fill_parent"
-                 android:layout_height="fill_parent"
-                 android:text="Nome:"/>
+    <!--wrap_content - O componente só querem exibir grande o suficiente para envolver apenas o seu conteúdo -->
+    <!--fill_parent - O componente quero mostrar tão grande quanto o seu pai, e preencher os espaços restantes -->
 
-             <TextView
-                  android:layout_width="fill_parent"
-                     android:layout_height="fill_parent"
-                 android:id="@+id/tvNome"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="CONSULTA DE FUNCIONÁRIOS"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
 
-          <TextView
-             android:layout_width="fill_parent"
-                 android:layout_height="fill_parent"
-              android:text="Matricula:"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-            <TextView
-               android:layout_width="fill_parent"
-               android:layout_height="fill_parent"
-                android:id="@+id/tvMatricula"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome: "
+            android:textStyle="bold" />
 
-    <Button
+        <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1E90FF" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:id="@+id/btRegistroAnterior"
-        android:text="Registro Anterior"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="fill_parent"
-        android:id="@+id/btProximoRegistro"
-        android:text="Proximo Registro"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matricula: "
+            android:textStyle="bold" />
 
-               <Button
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:id="@+id/btVoltar"
-                android:text="Menu Principal"/>
+        <TextView
+            android:id="@+id/tvMatricula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1E90FF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btRegistroAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="F. Anterior"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btProximoRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Proximo F."
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Voltar"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btExcluir"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Excluir"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 
 </LinearLayout>

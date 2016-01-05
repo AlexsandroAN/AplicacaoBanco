@@ -3,34 +3,39 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="Departamento de Arquitetura e Engenharia" />
+        android:text="Departamento de Arquitetura e Engenharia"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imagem"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:src="@drawable/dae" />
+        android:src="@drawable/logodae" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="TELA PRINCIPAL" />
+        android:text="TELA PRINCIPAL"
+        android:textColor="#228B22"
+        android:textStyle="bold" />/>
 
     <Button
         android:id="@+id/btCadastroFuncionario"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:text="Cadastro de Funcioários" />
+        android:text="Cadastro de Funcioários"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btConsultaFuncionario"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:text="Consulta de Funcionários" />
+        android:text="Consulta de Funcionários"
+        android:textStyle="bold" />
 
 </LinearLayout>
 

@@ -1,44 +1,81 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:text="TELA DE CADASTRO DE FUNCIONÁRIOS"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="CADASTRO DE FUNCIONÁRIOS"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
 
-            <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="fill_parent"
-                 android:text="Nome:"/>
-
-             <EditText
-                  android:layout_width="fill_parent"
-                     android:layout_height="fill_parent"
-                 android:id="@+id/nome"/>
-
-          <TextView
-             android:layout_width="wrap_content"
-                 android:layout_height="fill_parent"
-              android:text="Matricula:"/>
-
-            <EditText
-               android:layout_width="fill_parent"
-               android:layout_height="fill_parent"
-                android:id="@+id/matricula"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="fill_parent"
-                android:id="@+id/btMenuPrincipal"
-                android:text="Voltar Menu Principal"/>
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
-        android:id="@+id/btGravar"
-        android:text="Gravar"/>
+        android:text="Nome:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:hint="Digite o nome do funcionário"
+        android:inputType="text"
+        android:textColor="#1E90FF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:text="Matrícula:"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/matricula"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:hint="Digite o matrícula do funcionário"
+        android:inputType="number"
+        android:textColor="#1E90FF" />
+
+    <!--<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:" />
+
+    <Spinner
+        android:id="@+id/spEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cbPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pago" />-->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btMenuPrincipal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Voltar"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btGravar"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Gravar"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </LinearLayout>
 
