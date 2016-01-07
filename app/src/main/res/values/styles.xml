@@ -2,7 +2,20 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="android:background">#009933</item>-->
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Txt_Teste">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/txt_padrao</item>
+        <item name="android:layout_marginBottom">@dimen/margin_widgets</item>
+    </style>
+
+    <style name="Edt_Estilo">
+        <item name="android:textSize">@dimen/txt_padrao</item>
+        <item name="android:layout_marginBottom">@dimen/margin_widgets</item>
+    </style>
+
 
 </resources>

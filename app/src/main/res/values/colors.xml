@@ -6,6 +6,8 @@
     <color name="red">#ffff1125</color>
     <color name="yellow">#fff8ff8f</color>
     <color name="white">#fff6fffc</color>
-    <color name="txt_color">#f4140513</color>
-    <color name="bg_color">#ff62a94f</color>
+    <color name="txt_padrao">#f4140513</color>
+    <color name="bg_tela">#8befff89</color>
+    <color name="bg_action">#ff14761a</color>
+    <color name="bg_toast">#ff597637</color>
 </resources>

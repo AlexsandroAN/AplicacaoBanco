@@ -1,17 +1,18 @@
 package br.com.alex.aplicacaobanco;
 
 import android.app.AlertDialog;
-import android.support.v7.app.ActionBarActivity;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.text.Selection;
-import android.view.View;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.Cursor;
+
+import br.com.alex.aplicacaobanco.util.Util;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -33,6 +34,20 @@ public class MainActivity extends ActionBarActivity {
 
     public void chamaMenuPrincipal() {
         setContentView(R.layout.main);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        //getSupportActionBar().setDisplayUseLogoEnabled(true);
+
+        //getSupportActionBar().setLogo(R.drawable.brasao);
+        //getSupportActionBar().setDisplayUseLogoEnabled(true);
+       // getSupportActionBar().setIcon(R.drawable.brasao);
+
+        getSupportActionBar().setTitle("SIGDAE Mobile");
+
+        Util.showMsgToast(this, "Pagina Inicial do Sistema");
+
+      //  mensagemExibir("Titulo", "Alerta de Mensagem");
+
         fechaBanco();
         inicializaoObjetos();
         listeners();
@@ -138,8 +153,7 @@ public class MainActivity extends ActionBarActivity {
         }
     }
 
-
-    public void insereRegistro() {
+    public void salvarRegistro() {
         try {
             String sql = "INSERT INTO funcionarios (nome, matricula) VALUES ('"
                     + etNome.getText().toString() + "','"
@@ -266,11 +280,12 @@ public class MainActivity extends ActionBarActivity {
                             mensagemExibir("Aviso", "Nome do Funcionário e obrigatório!");
                             return;
                         } else {
-                            insereRegistro();
+                            salvarRegistro();
                             mensagemExibir("Aviso", "Funcionário [ " + etNome.getText().toString() + " ] salvo com sucesso!");
                             etNome.setText(null);
                             etMatricula.setText(null);
                             etNome.requestFocus();
+                     //chamaMenuPrincipal();
                         }
                     } catch (Exception erro) {
                         mensagemExibir("Erro Banco", "Erro ao gravar dados no Banco: " + erro.getMessage());
