@@ -7,19 +7,28 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.alex.aplicacaobanco.LoginActivity">
+    tools:context="br.com.alex.aplicacaobanco.LoginActivity"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logodae"/>
 
     <TextView
         style="@style/Txt_Teste"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Autenticação"/>
+        android:text="Autenticação"
+        android:textColor="@color/txt_padrao"/>
 
     <TextView
         style="@style/Txt_Teste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_usuario" />
+        android:text="@string/lbl_usuario"
+        android:textColor="@color/txt_padrao"/>
 
     <EditText
         style="@style/Edt_Estilo"
@@ -27,13 +36,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Login"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textColor="@color/txt_padrao"/>
 
     <TextView
         style="@style/Txt_Teste"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_senha" />
+        android:text="@string/lbl_senha"
+        android:textColor="@color/txt_padrao"/>
 
     <EditText
         style="@style/Edt_Estilo"
@@ -41,7 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:textColor="@color/txt_padrao"/>
 
     <Button
         android:id="@+id/btnLogar"
