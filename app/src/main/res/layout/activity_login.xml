@@ -16,6 +16,8 @@
         android:layout_gravity="center"
         android:src="@drawable/logodae"/>
 
+
+
     <TextView
         style="@style/Txt_Teste"
         android:layout_width="wrap_content"
