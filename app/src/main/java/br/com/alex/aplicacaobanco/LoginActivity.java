@@ -1,5 +1,6 @@
 package br.com.alex.aplicacaobanco;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -7,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import br.com.alex.aplicacaobanco.util.Util;
 
 
 public class LoginActivity extends AppCompatActivity{
@@ -34,10 +37,12 @@ public class LoginActivity extends AppCompatActivity{
                 String senha = edtSenha.getText().toString();
 
                 boolean isValido = validarCamposLogin(login, senha);
-                if (!isValido) {
+                if (isValido) {
                   //  Util.showMsgToast(LoginActivity.this, "Por favor preencha todos os ");
+                    Intent i = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(i);
+                    finish();
                 }
-
             }
         });
     }
@@ -54,6 +59,16 @@ public class LoginActivity extends AppCompatActivity{
             edtSenha.setError("Campo Obrigatório");
             return false;
         }
+
+        if(resultado) {
+            if (!login.equals("admin") || !senha.equals("admin")) {
+                Util.showMsgToast(LoginActivity.this,"Login e Usuário invalidos!" );
+                return false;
+            } else {
+
+            }
+        }
+
         return resultado;
     }
 
